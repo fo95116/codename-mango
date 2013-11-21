@@ -22,16 +22,16 @@ Vote.create([
 
 Narrative.create([
   { title: 'Good Morning', story: 'this is some random text', writer_id: 1 },
-  { title: 'Good Afternoon', story: 'this is some random text again', writer_id: 3 },
-  { title: 'Good Evening', story: 'this is some random text again twice', writer_id: 5 },
-  { title: 'Good Night', story: 'this is some random text for sleep', writer_id: 7 }
+  { title: 'Good Afternoon', story: 'this is some random text again', writer_id: 2 },
+  { title: 'Good Evening', story: 'this is some random text again twice', writer_id: 2 },
+  { title: 'Good Night', story: 'this is some random text for sleep', writer_id: 4 }
 ])
 
 Feedback.create([
-  { comment: 'very good conclusion', writer_id: 2, narrative_id: 5 },
-  { comment: 'good use of similies and diction', writer_id: 4, narrative_id: 6 },
-  { comment: 'could improve on introduction', writer_id: 6, narrative_id: 1 },
-  { comment: 'Keep on doing greate work', writer_id: 8, narrative_id: 7 }
+  { comment: 'very good conclusion', writer_id: 1, narrative_id: 1 },
+  { comment: 'good use of similies and diction', writer_id: 2, narrative_id: 2 },
+  { comment: 'could improve on introduction', writer_id: 4, narrative_id: 4 },
+  { comment: 'Keep on doing greate work', writer_id: 4, narrative_id: 4 }
 ])
 
 Image.create([
