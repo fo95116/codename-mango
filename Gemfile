@@ -6,7 +6,7 @@ gem 'rails', '3.2.14'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'pg'
-gem 'omniauth-facebook'
+gem 'omniauth-facebook', '1.4.0'
 gem 'figaro'
 
 group :development, :test do
