@@ -3,8 +3,7 @@ class NarrativesController < ApplicationController
   def index
     @narratives = Narrative.all
     @narratives.each do |n|
-      n[:title] = Narrative.find(n.id)
-      n[:writer] = Writer.find_by_writer_id(current.user.id)
+    n[:writer] = n.name
     end
     # Creates json summarizing all narrative titles and their authors
     render :json => @narratives
@@ -26,8 +25,6 @@ class NarrativesController < ApplicationController
     render :json => @narrativeFeedbacks
   end
 
-
-  end
 
   def edit
     @narrative = Narrative.find(params[:id])
