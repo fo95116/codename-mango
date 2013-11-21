@@ -3,7 +3,6 @@ class WritersController < ApplicationController
 def index
   @writers = Writer.all
   @narratives = Narrative.all
-  @feedbacks = Feedback.find_all_by_narrative_id()
 
   @writers.each do |w|
     @writer = {}
