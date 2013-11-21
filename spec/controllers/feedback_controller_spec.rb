@@ -11,7 +11,7 @@ require 'spec_helper'
 
     end
 
-  describe "post create" do
+  # describe "post create" do
 
     # context "valid params are sent" do
     #   it "should add feedback to database" do

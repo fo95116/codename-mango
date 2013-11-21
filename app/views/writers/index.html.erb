@@ -1,0 +1,5 @@
+<h1>Writers' Index</h1>
+
+<% @writers.each do |writer| %>
+ <h4><a href='/writers/<%=writer.id%>'><%= writer.name %></a></h4></br>
+ <% end %>
