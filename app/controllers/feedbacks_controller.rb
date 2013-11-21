@@ -11,7 +11,7 @@ class FeedbacksController < ApplicationController
   end
 
   def create
-    new_feedback = Feedback.create(params[:feedback])
+    @feedback = Feedback.create(params[:feedback])
     redirect_to feedback_path(new_feedback)
   end
 
