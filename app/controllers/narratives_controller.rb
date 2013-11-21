@@ -1,0 +1,2 @@
+class NarrativesController < ApplicationController
+end
