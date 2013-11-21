@@ -27,7 +27,7 @@ Narrative.create([
   { title: 'Good Night', story: 'this is some random text for sleep', writer_id: 7 }
 ])
 
-Writer.create([
+Feedback.create([
   { comment: 'very good conclusion', writer_id: 2, narrative_id: 5 },
   { comment: 'good use of similies and diction', writer_id: 4, narrative_id: 6 },
   { comment: 'could improve on introduction', writer_id: 6, narrative_id: 1 },

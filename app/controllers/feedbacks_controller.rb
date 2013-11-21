@@ -2,6 +2,8 @@ class FeedbacksController < ApplicationController
 
   def index
     @feedbacks = Feedback.all
+    # @images = Image.all
+    # render json: @images
   end
 
   def new
