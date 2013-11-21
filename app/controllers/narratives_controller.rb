@@ -3,10 +3,10 @@ class NarrativesController < ApplicationController
   def index
     @narratives = Narrative.all
     @narratives.each do |n|
-    # n[:writer] = n.name
+    n[:author] = Narrative.joins(:writer).where(:id == :writer_id)
     end
     # Creates json summarizing all narrative titles and their authors
-    # render :json => @narratives
+    render :json => @narratives
   end
 
   def new
