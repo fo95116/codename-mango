@@ -2,7 +2,11 @@ class NarrativesController < ApplicationController
 
   def index
     @narratives = Narrative.all
-    @feedback = Feedback.new
+    @narratives.each do |n|
+    n[:author] = Narrative.joins(:writer).where(:id == :writer_id)
+    end
+    # Creates json summarizing all narrative titles and their authors
+    render :json => @narratives
   end
 
   def new
@@ -11,17 +15,19 @@ class NarrativesController < ApplicationController
   end
 
   def create
-    new_narrative = Narrative.create(params[:narrative])
+    @narrative = Narrative.create(params[:narrative])
     redirect to narratives_path
   end
 
   def show
     @narrative = Narrative.find(params[:id])
-    @feedback = Feedback.new
+    @narrativeFeedbacks = Feedback.find_all_by_narrative_id(params[:id])
+    render :json => @narrativeFeedbacks
   end
 
+
   def edit
-    @narrative = Narrative.find(parms[:id])
+    @narrative = Narrative.find(params[:id])
   end
 
   def update

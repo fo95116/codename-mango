@@ -41,4 +41,10 @@ Image.create([
   { url: 'http://www.burnmagazine.org/wp-content/uploads/2010/06/obx-van.jpg' }
   ])
 
+ImageNarratives.create([
+  { image_id: 1, narrative_id: 1 },
+  { image_id: 2, narrative_id: 2 },
+  { image_id: 4, narrative_id: 4 },
+  { image_id: 4, narrative_id: 4 }
+])
 
