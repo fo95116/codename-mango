@@ -1,6 +1,6 @@
 class Writer < ActiveRecord::Base
   attr_accessible :name, :provider, :uid
-  has_many :narratives
+  has_many :narratives, dependent: :destroy
   has_many :comments, through: :narratives
   has_many :votes, through: :narratives
 
