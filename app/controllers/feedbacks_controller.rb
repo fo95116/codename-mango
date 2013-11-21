@@ -9,12 +9,12 @@ class FeedbacksController < ApplicationController
   end
 
   def create
-  new_feedback = Feedback.create(params[:feedback])
-  redirect_to feedback_path(new_feedback)
+    new_feedback = Feedback.create(params[:feedback])
+    redirect_to feedback_path(new_feedback)
   end
 
   def show
-  @feedback = Feedback.find(params[:id])
+    @feedback = Feedback.find(params[:id])
   end
 
   def destroy

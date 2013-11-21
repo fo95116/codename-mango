@@ -2,19 +2,22 @@ class NarrativesController < ApplicationController
 
   def index
     @narratives = Narrative.all
+    @feedback = Feedback.new
   end
 
   def new
     @narrative = Narrative.new
+    @image = Image.find(params[:id])
   end
 
   def create
     new_narrative = Narrative.create(params[:narrative])
-    redirect to narratives_path(new_narrative)
+    redirect to narratives_path
   end
 
   def show
     @narrative = Narrative.find(params[:id])
+    @feedback = Feedback.new
   end
 
   def edit
@@ -24,7 +27,7 @@ class NarrativesController < ApplicationController
   def update
     revised_narrative = Narrative.find(params[:id])
     revised_narrative.update_attributes(params[:narrative])
-    redirect_to narrative_path(revised_narrative)
+    redirect_to narratives_path
   end
 
   def destroy
