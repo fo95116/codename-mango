@@ -28,10 +28,10 @@ Narrative.create([
 ])
 
 Feedback.create([
-  { comment: 'very good conclusion', writer_id: 1, narrative_id: 1 },
-  { comment: 'good use of similies and diction', writer_id: 2, narrative_id: 2 },
-  { comment: 'could improve on introduction', writer_id: 4, narrative_id: 4 },
-  { comment: 'Keep on doing greate work', writer_id: 4, narrative_id: 4 }
+  { comment: 'very good conclusion', writer_id: 4, narrative_id: 1 },
+  { comment: 'good use of similies and diction', writer_id: 3, narrative_id: 2 },
+  { comment: 'could improve on introduction', writer_id: 1, narrative_id: 4 },
+  { comment: 'Keep on doing greate work', writer_id: 4, narrative_id: 3 }
 ])
 
 Image.create([
@@ -43,8 +43,8 @@ Image.create([
 
 ImageNarratives.create([
   { image_id: 1, narrative_id: 4 },
-  { image_id: 2, narrative_id: 2 },
-  { image_id: 2, narrative_id: 1 },
+  { image_id: 2, narrative_id: 3 },
+  { image_id: 3, narrative_id: 1 },
   { image_id: 4, narrative_id: 2 }
 ])
 

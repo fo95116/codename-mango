@@ -3,6 +3,7 @@ class Writer < ActiveRecord::Base
   has_many :narratives, dependent: :destroy
   has_many :comments, through: :narratives
   has_many :votes, through: :narratives
+  has_many :images, through: :narratives
 
   validates :name, :provider, :uid, presence: true
 
