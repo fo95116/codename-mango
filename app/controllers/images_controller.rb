@@ -15,6 +15,7 @@ def index
         record[:narrative_id]=imgnar.narrative_id
         record[:title]=Narrative.find(imgnar.narrative_id).title
         record[:name]=Writer.find(Narrative.find(imgnar.narrative_id).writer_id).name
+        record[:image_url]=img.url
         arr << record
       end
     end
@@ -39,6 +40,7 @@ end
       arr[:story]=img.narrative.story
       arr[:name]=img.narrative.writer.name
       arr[:writer_id]=img.narrative.writer_id
+      arr[:image_url]=Image.find(img.image_id).url
       foo << arr
     end
     render :json => foo

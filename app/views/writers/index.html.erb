@@ -1,20 +1,23 @@
 
 
-<h1>The Storytellers List</h1>
+<h1 align='center'>The Storytellers List</h1>
 
 
 <div class='writerList'>
   <!-- Display a list of writers with button to view all works by that author-->
 <% @writers.each do |writer| %>
   <div class="writerIndex" writerDivId="writerDiv<%= writer.id %>" id="<%= writer.id %>">
-   <h4><a href='/writers/<%=writer.id%>'><%= writer.name %></a></h4></br>
-   <input type="button" class="specWriterButton" value="Show all by this writer" id="<%= writer.id %>"
+   <h3><%= writer.name %></h3>
+   <input type="button" class="specWriterButton" value="Read stories" id="<%= writer.id %>">
   </div>
  <% end %>
 </div> <!--class writerList-->
-
-<div class='listTitle'></div>
+<div class='ajaxResults'>
+<div class ="specWriterStories" id='listTitle'></div>
 <div class ="specWriterStories">
+
 </div> <!--class specWriterStories-->
+</div>
+<!-- class ajax results -->
 
 

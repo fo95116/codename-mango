@@ -17,15 +17,16 @@ $(function(){
             url: "/writers/" + targetId,
             type: "get"
         } ).done(function(data) {
-            $('.story').empty();
-            $('.listTitle').empty()
+            $('.specWriterStories').empty();
+            $('#listTitle').empty();
                 for (i=0; i<data.length; i++) {
                         // console.log(data[i])
-                        $('.writerList').append('<div class = "story"><h3>'+ data[i].title + ' </h3>')
-                        $('.writerList').append('<img src=' + data[i].image_url + '>')
-                        $('.writerList').append( data[i].story + '</br></div>')
+                        $('.specWriterStories').append('<div class = "story"><h3 id="storytitle">'+ data[i].title + ' </h3>')
+                        $('.specWriterStories').append('<img src=' + data[i].image_url + '></br>')
+                        $('.specWriterStories').append('<p> ' + data[i].story + '</p></br></div>')
+
                 }
-                $('.listTitle').html('<h3>The Complete Works of ' + data[0].name + '</h3>')
+                $('#listTitle').html('<h3>The Complete Works of ' + data[0].name + '</h3>')
             } );
     });
 });

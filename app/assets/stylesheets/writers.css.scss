@@ -3,13 +3,56 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .writerList {
-  width: 50%;
+  width: 30%;
   float: left;
-  background-color: blue;
+  margin-left: 50px;
+  padding-left: 50px;
 }
 
-.listTitle {
-  width: 40%;
+.writerIndex{
+  border-radius: 15px;
+  margin-left: 50px;
+  padding-left: 50px;
+  padding-bottom: 10px;
+  padding-right: 50px;
+  background-color: #2980b9;
+}
+
+.specWriterStories {
+  width: 50%;
   float: right;
-  background-color: red;
+  border-radius: 15px;
+  margin-left: 50px;
+  margin-right: 50px;
+  padding-left: 50px;
+  padding-bottom: 10px;
+  background-color: #e74c3c;
+}
+.story {
+/*  width: 40%;
+  float: right;*/
+
+}
+
+#listTitle {
+margin-bottom: 30px
+}
+
+h3 {
+  font-size: 34px;
+}
+
+p {
+  font-size: 30px;
+}
+
+
+.specWriterButton {
+  padding: 5px;
+  font: bold ;
+  border: 2px solid #333;
+  border-radius: 5px;
+  background: #7f8c8d;
+  cursor: pointer;
+  font-size: 18px;
 }
