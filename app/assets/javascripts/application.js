@@ -14,15 +14,30 @@
 //= require jquery_ujs
 //= require_tree .
 
-$(function() {
-  $('#button3').click(function(event) {
-    event.preventDefault();
-      // $('#foo3').removeClass("hidden")
-      $('#foo3').fadeIn( "slow", function() {
-        console.log("this is supposed to fade in")
-      });
+// var image_template = _.template( "<div class='boxes'>" +
+//                                  "<img src='<%= url %>'/><br>" +
+//                                  "Name: <%= name %>" +
+//                                  "</div>");
+// $(function() {
 
-  });
+//   $.get('/images.json')
+//     .done(function(data){
+//       console.log(data);
+
+//       _.each(data, function(item){
+//         $("#pics").append(image_template(item));
+//       });
+//   });
+// })
+
+$(function() {
+  $()
+  $.get('images/' + )
+    .done(function(data) {
+      console.log(data);
+
+    });
+
 })
 
 

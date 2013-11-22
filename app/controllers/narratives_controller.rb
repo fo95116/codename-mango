@@ -2,11 +2,14 @@ class NarrativesController < ApplicationController
 
   def index
     @narratives = Narrative.all
+    @narrative = Narrative.new
     @narratives.each do |n|
+
     n[:name]=n.writer.name
+
     end
     # Creates json summarizing all narrative titles and their authors
-    render :json => @narratives
+    # render :json => @narratives
   end
 
   def new
