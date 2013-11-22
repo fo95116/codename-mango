@@ -31,15 +31,15 @@
 // })
 
 
-$(function() {
+// $(function() {
 
-  $.get('images/' + )
-    .done(function(data) {
-      console.log(data);
+//   $.get('images/' + )
+//     .done(function(data) {
+//       console.log(data);
 
-    });
+//     });
 
-})
+// })
 
 
 

@@ -18,7 +18,7 @@
 			<!-- Top Navigation -->
 			<div class="codrops-top clearfix">
 				<!-- <a class="codrops-icon codrops-icon-prev" href="http://tympanus.net/Development/CreativeButtons/"><span>Previous Demo</span></a> -->
-				<span class="right"><a class="codrops-icon codrops-icon-drop" href="http://tympanus.net/codrops/?p=15469"><span>View all writers</span></a></span>
+				<span class="right"><a class="codrops-icon codrops-icon-drop" href="/writers"><span>View all writers</span></a></span>
 			</div>
 			<header>
 				<h1>Storyteller</h1>
@@ -35,7 +35,7 @@
        <img src="<%= image.url %>" alt="image <%= image.id %>"/>
        <figcaption>
 
-          <a href="#" name="narrative" class="button<%= image.id %>">Post Caption</a>
+          <a href="/narratives/new?imgUrl=<%= image.url%>" name="narrative" class="postButton" id="<%= image.id %>">Post Caption</a>
           <a href="images/<%= image.id %>" name="img_button"
           id="image <%= image.id %>"> View Examples</a>
 
