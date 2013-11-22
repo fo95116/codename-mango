@@ -30,8 +30,9 @@
 //   });
 // })
 
+
 $(function() {
-  $()
+
   $.get('images/' + )
     .done(function(data) {
       console.log(data);

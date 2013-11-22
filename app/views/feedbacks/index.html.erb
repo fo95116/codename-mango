@@ -34,7 +34,12 @@
       <figure>
        <img src="<%= image.url %>" alt="image <%= image.id %>"/>
        <figcaption>
-          <a href="/narratives/new" name="narrative" class='postButton' id="<%= image.id %>">Post Caption</a>
+
+          <a href="#" name="narrative" class="button<%= image.id %>">Post Caption</a>
+          <a href="images/<%= image.id %>" name="img_button"
+          id="image <%= image.id %>"> View Examples</a>
+
+
             <div class="hidden">
               <div class ="narrative-form" id="foo<%= image.id %>">
 

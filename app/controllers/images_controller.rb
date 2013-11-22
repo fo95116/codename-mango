@@ -20,7 +20,10 @@ def index
       end
     end
     # Creates json summarizing all narrative titles and their authors
-    render :json => arr
+    respond_to do |format|
+      format.html
+      format.json { render :json => arr }
+    end
 
 end
 
@@ -43,7 +46,12 @@ end
       arr[:image_url]=Image.find(img.image_id).url
       foo << arr
     end
-    render :json => foo
+
+    respond_to do |format|
+      format.html
+      format.json { render :json => foo }
+    end
+
   end
 
 end
