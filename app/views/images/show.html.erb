@@ -1,5 +1,14 @@
-<p> hellow world </p>
 
-<div id="examples">
 
+
+  <div id="examples">
+    <% @foo.each do |f| %>
+
+        title: <strong><%= f[:title] %></strong><br>
+        <%= f[:story] %><br>
+        by: <em><%= f[:name] %></em><br>
+
+    <% end %>
+
+  </div>
 </div>

@@ -49,3 +49,13 @@ header h1 {
   position: relative;
 }
 
+#examples {
+  background-color: #16a085;
+  width: 30%;
+  padding: 10px;
+  margin: 0 auto;
+  border-radius: 7px;
+  color: #fff;
+
+}
+

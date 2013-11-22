@@ -14,32 +14,24 @@
 //= require jquery_ujs
 //= require_tree .
 
-// var image_template = _.template( "<div class='boxes'>" +
-//                                  "<img src='<%= url %>'/><br>" +
-//                                  "Name: <%= name %>" +
-//                                  "</div>");
-// $(function() {
-
-//   $.get('/images.json')
-//     .done(function(data){
-//       console.log(data);
-
-//       _.each(data, function(item){
-//         $("#pics").append(image_template(item));
-//       });
-//   });
-// })
-
-
+var image_template = _.template( "<div class='boxes'>" +
+                                 // "<img src='<%= url %>'/><br>" +
+                                 "Name: <%= name %>" +
+                                 "</div>");
 $(function() {
 
-  $.get('images/' + )
-    .done(function(data) {
+  $.get('/images.json')
+    .done(function(data){
       console.log(data);
 
-    });
-
+      _.each(data, function(item){
+        $("#pics").append(image_template(item));
+      });
+  });
 })
+
+
+
 
 
 

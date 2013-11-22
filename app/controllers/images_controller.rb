@@ -33,7 +33,8 @@ end
     @image_narratives=ImageNarratives.find_all_by_image_id(params[:id])
     # @writers=Writer.all
     # @narratives=Narrative.all
-    foo=[]
+    @foo=[]
+
     @image_narratives.each do |img|
       arr={}
       arr[:image_narrative_id]=img.id
@@ -44,13 +45,13 @@ end
       arr[:name]=img.narrative.writer.name
       arr[:writer_id]=img.narrative.writer_id
       arr[:image_url]=Image.find(img.image_id).url
-      foo << arr
+      @foo << arr
     end
 
-    respond_to do |format|
-      format.html
-      format.json { render :json => foo }
-    end
+    # respond_to do |format|
+    #   format.html
+    #   format.json { render :json => @foo }
+    # end
 
   end
 
