@@ -34,10 +34,15 @@
       <figure>
        <img src="<%= image.url %>" alt="image <%= image.id %>"/>
        <figcaption>
-        <a href="#"></a>
-        <a href="#"></a>
+            <a href="#" name="narrative">Post Caption</a>
+
+
        </figcaption>
       </figure>
     </li>
   <% end %>
 </ul>
+
+<div id="narrative-form" >
+  <%= render 'narratives/add_narrative' %>
+</div>

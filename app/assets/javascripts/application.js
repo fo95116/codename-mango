@@ -13,3 +13,17 @@
 //= require jquery
 //= require jquery_ujs
 //= require_tree .
+
+$( document ).ready(function() {
+  $("a[name=narrative]").click(function(event) {
+    event.preventDefault();
+    console.log('fade in window')
+    $('#narrative-form').fadeOut( "fast", function() {
+      console.log('window function')
+    });
+  });
+})
+
+
+
+

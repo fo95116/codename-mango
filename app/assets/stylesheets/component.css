@@ -31,7 +31,7 @@
 	top: 0;
 	left: 0;
 	padding: 20px;
-	background: #2c3f52;
+	background: #16a085;
 	color: #ed4e6e;
 }
 
@@ -41,18 +41,28 @@
 	color: #fff;
 }
 
-.grid figcaption span:before {
+/*.grid figcaption span:before {
 	content: 'by ';
-}
+}*/
 
 .grid figcaption a {
 	text-align: center;
 	padding: 5px 10px;
 	border-radius: 2px;
 	display: inline-block;
-	background: #ed4e6e;
-	color: #fff;
+	background: #ecf0f1;
+	color: #e74c3c;
 }
+
+.grid figcaption a #narrative{
+	margin: 0 auto;
+	float: left;
+}
+
+/*.grid figcaption a #feedback {
+
+	float: right;
+}*/
 
 /* Individual Caption Styles */
 
@@ -115,7 +125,7 @@
 }
 
 .cs-style-2 figcaption a {
-	position: absolute;
+	/*position: absolute;*/
 	right: 20px;
 	top: 30px;
 }
