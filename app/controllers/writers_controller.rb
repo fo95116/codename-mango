@@ -5,9 +5,10 @@ class WritersController < ApplicationController
     @writers = Writer.all
     arr=[]
     @writers.each do |w|
-      @writer = {}
         @narratives = Narrative.find_all_by_writer_id(w.id)
         @narratives.each do |n|
+          @writer = {}
+
           @writer[:title] = n.title
           @writer[:name]=w.name
           @writer[:story]=n.story
@@ -16,7 +17,12 @@ class WritersController < ApplicationController
            arr << @writer
         end
     end
-    render :json => arr
+    respond_to do |format|
+         format.html
+         format.json { render :json => arr }
+     end
+        # render :json => arr
+
   end
 
   def new

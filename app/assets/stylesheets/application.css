@@ -25,5 +25,9 @@ header h1 {
   display: none;
 }
 
-.narrative-form { background-color: #16a085 }
+.narrative-form {
+  background-color: #16a085;
+  height: 300px;
+  width: 100px
+   }
 

@@ -15,11 +15,11 @@
 //= require_tree .
 
 $(function() {
-  $("a[name=narrative]").click(function(event) {
+  $('#button3').click(function(event) {
     event.preventDefault();
-      $('.narrative-form').removeClass("hidden")
+      // $('#foo3').removeClass("hidden")
       $('#foo3').fadeIn( "slow", function() {
-        console.log("this will fade out")
+        console.log("this is supposed to fade in")
       });
 
   });
