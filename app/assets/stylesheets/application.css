@@ -17,3 +17,13 @@ img {
   height: 300px;
 }
 
+header h1 {
+  color: #16a085;
+}
+
+.hidden {
+  display: none;
+}
+
+.narrative-form { background-color: #16a085 }
+

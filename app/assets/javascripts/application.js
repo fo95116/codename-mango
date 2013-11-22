@@ -14,15 +14,17 @@
 //= require jquery_ujs
 //= require_tree .
 
-$( document ).ready(function() {
+$(function() {
   $("a[name=narrative]").click(function(event) {
     event.preventDefault();
-    console.log('fade in window')
-    $('#narrative-form').fadeOut( "fast", function() {
-      console.log('window function')
-    });
+      $('.narrative-form').removeClass("hidden")
+      $('#foo3').fadeIn( "slow", function() {
+        console.log("this will fade out")
+      });
+
   });
 })
+
 
 
 
