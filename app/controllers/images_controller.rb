@@ -21,7 +21,7 @@ def show
   foo=[]
 
   @image_narratives.each do |img|
-    arr[:image_narrative_id]=img.id
+    arr[:imgnar]=img.id
     arr[:narrative_id]=img.narrative_id
     arr[:image_id]=img.image_id
     arr[:title]=img.narrative.title
