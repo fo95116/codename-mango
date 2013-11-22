@@ -1,3 +1,15 @@
 // Place all the styles related to the writers controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.writerList {
+  width: 50%;
+  float: left;
+  background-color: blue;
+}
+
+.listTitle {
+  width: 40%;
+  float: right;
+  background-color: red;
+}

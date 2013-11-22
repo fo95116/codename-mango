@@ -47,6 +47,7 @@ class WritersController < ApplicationController
       story[:story]=n.story
       story[:narrative_id]=n.id
       story[:name]=@writer.name
+      story[:image_url]=Image.find(ImageNarratives.find_by_narrative_id(n.id).image_id).url
       narr_array << story
     end
     render :json => narr_array

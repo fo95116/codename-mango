@@ -10,7 +10,8 @@ def index
       @image_narratives=ImageNarratives.find_all_by_image_id(img.id)
       @image_narratives.each do |imgnar|
         record={}
-        record[:image_id]=imgnar.id
+        record[:image_id]=img.id
+        record[:image_narrative_id]=imgnar.id
         record[:narrative_id]=imgnar.narrative_id
         record[:title]=Narrative.find(imgnar.narrative_id).title
         record[:name]=Writer.find(Narrative.find(imgnar.narrative_id).writer_id).name

@@ -3,7 +3,7 @@
 <h1>The Storytellers List</h1>
 
 
-<div class=writerList>
+<div class='writerList'>
   <!-- Display a list of writers with button to view all works by that author-->
 <% @writers.each do |writer| %>
   <div class="writerIndex" writerDivId="writerDiv<%= writer.id %>" id="<%= writer.id %>">
@@ -13,6 +13,7 @@
  <% end %>
 </div> <!--class writerList-->
 
+<div class='listTitle'></div>
 <div class ="specWriterStories">
 </div> <!--class specWriterStories-->
 
