@@ -4,7 +4,6 @@ class NarrativesController < ApplicationController
     @narratives = Narrative.all
     @narratives.each do |n|
     n[:name]=n.writer.name
-    # n[:writer] = Narrative.joins(:writer).where(:id == :writer_id)
     end
     # Creates json summarizing all narrative titles and their authors
     render :json => @narratives
