@@ -1,21 +1,2 @@
 
 
-<form>
-
-</form>
-<%= form_for @narrative do |n| %>
-<%= n.label :title %> </br>
-<%= n.text_field :title, :placeholder => "Title of your narrative" %></br>
-
-<%= n.label :story %></br>
-<%= n.text_area :story, size: "20x10", :placeholder => "Your story goes here" %>
-</br>
-</br>
-<%= n.submit "Submit your Caption" %>
-
-<% end %>
-
-
-<!-- Div to show image the new narrative is being written about -->
-<div class='imgForNewNar'>
-</div>

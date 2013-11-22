@@ -19,7 +19,7 @@ class NarrativesController < ApplicationController
 
   def create
     @narrative = Narrative.create(params[:narrative])
-    redirect to narratives_path
+    redirect_to narratives_path
   end
 
   def show

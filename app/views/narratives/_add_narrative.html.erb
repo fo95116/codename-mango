@@ -4,9 +4,9 @@
   <%= n.text_field :title, :placeholder => "Title of your narrative" %></br>
 
   <%= n.label :story %></br>
-  <%= n.text_area :story, size: "20x10", :placeholder => "Your story goes here" %>
-  </br>
-  </br>
+  <%= n.text_area :story, size: "80x30", :placeholder => "Your story goes here" %>
+  <%= n.hidden_field :writer_id, :value => "2" %>
+
   <%= n.submit "Submit your Caption" %>
 
 <% end %>
