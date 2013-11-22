@@ -11,7 +11,7 @@ class NarrativesController < ApplicationController
 
   def new
     @narrative = Narrative.new
-    @image = Image.find(params[:id])
+
   end
 
   def create
