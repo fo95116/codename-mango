@@ -8,7 +8,7 @@
 <% @writers.each do |writer| %>
   <div class="writerIndex" writerDivId="writerDiv<%= writer.id %>" id="<%= writer.id %>">
    <h4><a href='/writers/<%=writer.id%>'><%= writer.name %></a></h4></br>
-   <input type="button" class="specWriterButton" value="Show all by this writer" id="specWriter<%= writer.id %>"
+   <input type="button" class="specWriterButton" value="Show all by this writer" id="<%= writer.id %>"
   </div>
  <% end %>
 </div> <!--class writerList-->
